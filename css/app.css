@@ -1,3 +1,41 @@
+/*@import url('http://fonts.lug.ustc.edu.cn/css?family=Source+Sans+Pro:300,900');*/
+@font-face{
+  font-family: 'Noto Sans CJK SC';
+  src: url('../fonts/NotoSansCJKsc-Regular.otf') format('otf');
+  font-weight: normal;
+	font-style: normal;
+}
+
+body, html { font-size: 100%; padding: 0; margin: 0;}
+
+body{
+  font-family: 'Noto Sans CJK SC',sans-serif;
+  color: #666;
+}
+
+a {
+	color: #ccc;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+}
+
+p{
+  padding: 0;
+  margin:0;
+}
+
+.zero-height {
+  height: 0% !important;
+}
+
+.none{
+  display: none;
+}
+
+
 html, body, .container {
 	position: relative;
 	width: 100%;
@@ -15,8 +53,10 @@ header.headerbar {
 	margin-top: 0;
 	background-color: #fff;
 	z-index: 3;
+	-webkit-transition: all 0.8s;
 	transition: all 0.8s;
-	transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+	-webkit-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+	        transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
 	/* easeInOutQuart */
 }
 main.main {
@@ -26,14 +66,17 @@ main.main {
 	height: 100%;
 	width: 100%;
 	overflow: hidden;
+	-webkit-transition: all 0.8s;
 	transition: all 0.8s;
 	z-index: 1;
 }
 div.slide-frame {
 	height: 100%;
 	width: 300%;
+	-webkit-transition: all 0.8s;
 	transition: all 0.8s;
-	transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+	-webkit-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+	        transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
 }
 footer.footer {
 	display: block;
@@ -59,8 +102,10 @@ ul.icons li {
 	opacity: 1;
 	display: inline-block;
 	padding: 0.675em 0.5em;
+	-webkit-transition: all 0.8s;
 	transition: all 0.8s;
-	transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+	-webkit-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+	        transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
 	/* easeInOutQuart */
 }
 
@@ -81,6 +126,7 @@ ul.icons li a {
 	text-align: center;
 	text-indent: 3.75em;
 	white-space: nowrap;
+	-webkit-transition: all 0.4s;
 	transition: all 0.4s;
 }
 
@@ -102,6 +148,7 @@ ul.icons li a:before {
 	font-style: normal;
 	font-weight: normal;
 	text-transform: none !important;
+	-webkit-transition: all 0.4s;
 	transition: all 0.4s;
 }
 ul.icons li a:before {}
@@ -134,17 +181,22 @@ div.triangle-shadow:before {
 	width: 2em;
 	height: 2em;
 	background: transparent;
-	transform-origin: 0 0;
-	transform: rotate(45deg);
+	-webkit-transform-origin: 0 0;
+	        transform-origin: 0 0;
+	-webkit-transform: rotate(45deg);
+	        transform: rotate(45deg);
 	box-shadow: 0.2em 0.2em 0.2em #999 inset;
 	/* For Latest Opera */
+	-webkit-transition: width height;
 	transition: width height;
-	transition-delay: 0.5s;
+	-webkit-transition-delay: 0.5s;
+	        transition-delay: 0.5s;
 }
 div.triangle-shadow:hover:before {
 	width: 0;
 	height: 0;
-	transition-delay: 0s;
+	-webkit-transition-delay: 0s;
+	        transition-delay: 0s;
 }
 div.triangle {
 	position: relative;
@@ -154,6 +206,7 @@ div.triangle {
 	border-style: solid;
 	border-width: 0 1.5em 1.5em 1.5em;
 	border-color: transparent transparent #58555f transparent;
+	-webkit-transition: border-width 0.5s;
 	transition: border-width 0.5s;
 	z-index: 3;
 	/*-moz-box-shadow:-50px -50px -50px #999 inset;
@@ -202,8 +255,10 @@ a.left-arrow {
 	overflow: hidden;
 	text-align: center;
 	top: 50%;
-	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	        transform: translateY(-50%);
 	margin-left: 1em;
+	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 }
 a.left-arrow:hover {
@@ -229,7 +284,9 @@ a.right-arrow {
 	text-align: center;
 	top: 50%;
 	right: 0%;
-	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	        transform: translateY(-50%);
+	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 	margin-right: 1em;
 }
@@ -242,4 +299,46 @@ a.right-arrow:before {
 	font-style: normal;
 	font-weight: normal;
 	font-size: 3em;
+}
+
+p.bignotice{
+  font-size: 4em;
+  color:#aaaaaa;
+}
+
+div.sculpture-container{
+	width: 100%;
+	padding: 0;
+	height: 20em;
+	-webkit-transition: all 0.8s;
+	transition: all 0.8s;
+	-webkit-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+	        transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+div.sculpture-container.hide{
+	height: 0;
+}
+
+img.sculpture{
+	opacity: 1;
+	margin-top: 10em;
+	margin-bottom: 10em;
+	-webkit-transition: all 0.8s;
+	transition: all 0.8s;
+	-webkit-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+	        transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+img.sculpture.transparent{
+	-webkit-transform: scale(0);
+	        transform: scale(0);
+	opacity: 0;
+}
+
+img.sculpture.hide{
+	opacity:0;
+	height: 0;
+	margin: 0;
+	padding: 0;
 }
